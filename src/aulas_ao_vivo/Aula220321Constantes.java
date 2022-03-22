@@ -4,9 +4,10 @@ public class Aula220321Constantes {
 
 	public static void main(String[] args) {
 
-		// constantes tem a indicação "final" e os atributos devem ter todas as letras maiúsculas
-		
-		final double PI = 3.14159; // não pode ser alterado em tempo de execução
+		// constantes tem a indicaÃ§Ã£o "final" e os atributos devem ter todas as letras
+		// maiÃºsculas
+
+		final double PI = 3.14159; // nÃ£o pode ser alterado em tempo de execuÃ§Ã£o
 
 	}
 

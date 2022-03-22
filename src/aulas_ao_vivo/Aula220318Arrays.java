@@ -19,7 +19,14 @@ public class Aula220318Arrays {
 			System.out.println("Idades: " + idades[i]);
 		}
 		for (int i = 0; i < nomes.length; i++) {
-			System.out.println("Nomes: " + idades[i]);
+			System.out.println("Nomes: " + nomes[i]);
+		}
+
+		for (int i = 0; i < idades2.length; i++) {
+			System.out.println("Idades: " + idades2[i]);
+		}
+		for (int i = 0; i < nomes2.length; i++) {
+			System.out.println("Nomes: " + nomes2[i]);
 		}
 
 		// multidimensionais
