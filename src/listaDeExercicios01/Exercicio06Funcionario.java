@@ -6,7 +6,7 @@ public class Exercicio06Funcionario {
 
 	public static void main(String[] args) {
 		Scanner leia = new Scanner(System.in);
-		
+
 		int matricula;
 		String nome;
 		int idade;
@@ -14,8 +14,8 @@ public class Exercicio06Funcionario {
 		String endereco;
 		String bairro;
 		String estadoCivil;
-		
-		System.out.println("Digite o número da matrícula: ");
+
+		System.out.println("Digite o nÃºmero da matrÃ­cula: ");
 		matricula = leia.nextInt();
 		System.out.println("Digite o nome: ");
 		nome = leia.next();
@@ -23,15 +23,15 @@ public class Exercicio06Funcionario {
 		idade = leia.nextInt();
 		System.out.println("Digite o sexo: ");
 		sexo = leia.next();
-		System.out.println("Digite o endereço: ");
+		System.out.println("Digite o endereÃ§o: ");
 		endereco = leia.next();
 		System.out.println("Digite o bairro: ");
 		bairro = leia.next();
 		System.out.println("Digite o estado civil: ");
 		estadoCivil = leia.next();
-		
-		System.out.println("Nome do(a) funcionário(a): " + nome);
-		
+
+		System.out.println("Nome do(a) funcionÃ¡rio(a): " + nome);
+
 	}
 
 }
