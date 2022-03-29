@@ -1,8 +1,8 @@
-package aulas_ao_vivo;
+package aula220321;
 
 import java.util.Scanner;
 
-public class Aula220321EntradaDeDados {
+public class EntradaDeDados {
 
 	public static void main(String[] args) {
 		

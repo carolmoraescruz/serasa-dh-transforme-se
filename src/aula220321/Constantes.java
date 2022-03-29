@@ -1,6 +1,6 @@
-package aulas_ao_vivo;
+package aula220321;
 
-public class Aula220321Constantes {
+public class Constantes {
 
 	public static void main(String[] args) {
 

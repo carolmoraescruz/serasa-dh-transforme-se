@@ -1,6 +1,6 @@
-package aulas_ao_vivo;
+package aula220325_220328;
 
-public class Aula220325Pessoa {
+public class Pessoa {
 	
 	private String nome;
 	private String cpf;
@@ -11,17 +11,17 @@ public class Aula220325Pessoa {
 	
 	
 	//Construtores
-	public Aula220325Pessoa() {
+	public Pessoa() {
 		//método construtor default = preenchimento dos atributos é opcional.
 	}
 	
-	public Aula220325Pessoa(String nome, String cpf, String rg) {
+	public Pessoa(String nome, String cpf, String rg) {
 		this.nome = nome;
 		this.cpf = cpf;
 		this.rg = rg;
 	}
 		
-	public Aula220325Pessoa(String nome, String cpf, String rg, String profissao, String email, String telefone) {
+	public Pessoa(String nome, String cpf, String rg, String profissao, String email, String telefone) {
 		super();
 		this.nome = nome;
 		this.cpf = cpf;

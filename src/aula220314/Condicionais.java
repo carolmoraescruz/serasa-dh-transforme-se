@@ -1,8 +1,8 @@
-package aulas_ao_vivo;
+package aula220314;
 
 // Notas de aula referentes ao dia 14/03/2022, sobre condicionais.
 
-public class Aula220314Condicionais {
+public class Condicionais {
 
     public static void main(String[] args) {
         double salario = 2758.33;

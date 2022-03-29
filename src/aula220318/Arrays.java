@@ -1,8 +1,8 @@
-package aulas_ao_vivo;
+package aula220318;
 
 // Notas de aula referentes ao dia 18/03/2022.
 
-public class Aula220318Arrays {
+public class Arrays {
 
 	public static void main(String[] args) {
 

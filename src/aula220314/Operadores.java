@@ -1,8 +1,8 @@
-package aulas_ao_vivo;
+package aula220314;
 
 // Notas de aula referentes ao dia 14/03/2022, sobre operadores.
 
-public class Aula220314Operadores {
+public class Operadores {
 
     public static void main(String[] args) {
         // Operadores aritm�ticos

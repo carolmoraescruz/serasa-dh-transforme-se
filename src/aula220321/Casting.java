@@ -1,6 +1,6 @@
-package aulas_ao_vivo;
+package aula220321;
 
-public class Aula220321Casting {
+public class Casting {
 
 	public static void main(String[] args) {
 		double valor = 7.78965; // 64 bits
