@@ -1,4 +1,4 @@
-package aula220325_220328;
+package aula220325_a_220330;
 
 public class TestaBanco {
 
@@ -30,17 +30,27 @@ public class TestaBanco {
 //		System.out.println("RG: " + pessoaComConstrutor1.getRg());
 
 		
+		PessoaFisica pfAna = new PessoaFisica();
+		pfAna.setNome("Ana Banana");
+		pfAna.setEmail("anabanana@gmail.com");
+		pfAna.setTelefone("2165931566");
+		pfAna.setCpf("879.359.983-88");
+		pfAna.setProfissao("Professora");
+		pfAna.setRg("12345984");
+		
 		Conta conta1 = new Conta();
 		conta1.setAgencia(1234);
 		conta1.setNumeroConta(7889);
 //		conta1.setSaldo(100000.50); >> não se deve alterar manualmente essa informação, devendo ser apenas exibida.
-		conta1.setTitular("Caroline Moraes da Cruz");
+		conta1.setTitular(pfAna);
 		
 		
 		System.out.println("Agencia: " + conta1.getAgencia());
 		System.out.println("Conta: " + conta1.getNumeroConta());
 		System.out.printf("Saldo: R$ %.2f\n", conta1.getSaldo());
-		System.out.println("Titular: " + conta1.getTitular());
+		System.out.println("Titular: " + conta1.getTitular().getNome());
+		
+		System.out.println("....................................................");
 		
 		conta1.depositar(10000);
 		
@@ -53,16 +63,30 @@ public class TestaBanco {
 		}
 		
 		System.out.printf("Saldo atual: R$ %.2f\n", conta1.getSaldo());
+
+		System.out.println("....................................................");
 		
 		Conta conta2 = new Conta();
 		conta2.setAgencia(5582);
 		conta2.setNumeroConta(2234);
-		conta2.setTitular("Ana Banana");
 		
 		conta1.transferir(200, conta2);
 		
 		System.out.printf("Saldo atual conta 1: R$ %.2f\n", conta1.getSaldo());
 		System.out.printf("Saldo atual conta 2: R$ %.2f\n", conta2.getSaldo());
+		
+		System.out.println("....................................................");
+		
+		ContaCorrente cc1 = new ContaCorrente();
+		cc1.depositar(1000);
+		System.out.printf("Saldo cc1: R$ %.2f\n", cc1.getSaldo());
+		System.out.printf("Limite cc1: R$ %.2f\n", cc1.getLimite());
+		System.out.printf("Total cc1: R$ %.2f\n", cc1.getSaldoComLimite());
+		
+		cc1.sacar(1100);
+		System.out.printf("Saldo cc1: R$ %.2f\n", cc1.getSaldo());
+		System.out.printf("Saldo com Limite cc1: R$ %.2f\n", cc1.getSaldoComLimite());
+		
 		
 	}
 }
