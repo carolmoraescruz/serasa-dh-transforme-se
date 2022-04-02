@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"aula220311"},{"l":"aula220314"},{"l":"aula220316"},{"l":"aula220318"},{"l":"aula220321"},{"l":"aula220325_a_220330"},{"l":"listaDeExercicios01"},{"l":"listaDeExercicios02Arrays"}];updateSearchResults();
