@@ -19,7 +19,5 @@ public interface AcessoInterno {
 	// método para mudar senha
 	
 	public boolean alterarSenha(String senhaAntiga, String novaSenha);
-	
-	// tentar limitar usuário até 12 caracteres e senha até 8 caracteres.
 
 }

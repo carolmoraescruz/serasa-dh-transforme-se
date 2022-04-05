@@ -33,7 +33,7 @@ public class Gerente extends Funcionario implements AcessoInterno {
 
 	@Override
 	public boolean mudarUsuario(String novoUsuario) {
-		if (!this.usuario.equals(novoUsuario)) {
+		if (!this.usuario.equals(novoUsuario) && usuario.length() == 12) {
 			this.usuario = novoUsuario;
 			return true;
 		}
@@ -42,7 +42,7 @@ public class Gerente extends Funcionario implements AcessoInterno {
 
 	@Override
 	public boolean alterarSenha(String senhaAntiga, String novaSenha) {
-		if (this.senha.equals(senhaAntiga)) {
+		if (this.senha.equals(senhaAntiga) && senha.length() == 8) {
 			this.senha = novaSenha;
 			return true;
 		}
