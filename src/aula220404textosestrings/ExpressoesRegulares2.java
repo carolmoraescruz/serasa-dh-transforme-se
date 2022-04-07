@@ -1,5 +1,7 @@
 package aula220404textosestrings;
 
+import aula220406exceptions.TratamentoDeOutrasExceptions;
+
 public class ExpressoesRegulares2 {
 	
 	private String ddd;
@@ -7,15 +9,15 @@ public class ExpressoesRegulares2 {
 	
 	public ExpressoesRegulares2(String ddd, String numero) {
 		if (ddd == null || numero == null) {
-			System.out.println("Telefone inválido");
+			throw new TratamentoDeOutrasExceptions("Telefone inválido");
 		}
 		
 		if (!ddd.matches("\\d{2}")) {
-			System.out.println("DDD inválido");
+			throw new IllegalArgumentException("DDD inválido");
 		}
 		
 		if (!numero.matches("\\d{8}|\\d{9}")) {
-			System.out.println("Número inválido");
+			throw new IllegalArgumentException("Número inválido");
 		}
 		
 		this.ddd = ddd;
