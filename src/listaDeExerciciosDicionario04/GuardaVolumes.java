@@ -25,6 +25,7 @@ public class GuardaVolumes {
 	}
 	
 	public void devolverPecas(Integer numero) {
+		mapVolumes.remove(numero);
 		
 	}
 	
