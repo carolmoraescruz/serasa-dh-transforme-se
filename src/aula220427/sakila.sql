@@ -92,3 +92,38 @@ SELECT
     (length / rental_duration) * 2 AS meu_calculo
 FROM
     film;
+
+SELECT 
+    title AS name, 'filme' AS tipo
+FROM
+    film 
+UNION SELECT 
+    first_name AS name, 'ator' AS tipo
+FROM
+    actor;
+
+SELECT 
+    COUNT(*)
+FROM
+    film
+WHERE
+    original_language_id IS NULL;
+
+SELECT 
+    COUNT(*)
+FROM
+    film
+WHERE
+    original_language_id IS NOT NULL;
+    
+SELECT 
+    name
+FROM
+    language
+WHERE
+    language_id IN (SELECT 
+            original_language_id
+        FROM
+            film
+        WHERE
+            original_language_id IS NOT NULL);
